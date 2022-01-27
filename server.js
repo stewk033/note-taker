@@ -2,9 +2,9 @@ const path = require('path');
 const fs = require('fs');
 const express = require('express');
 const { endianness } = require('os');
-const app = express();
 
 const PORT = process.env.PORT || 3001;
+const app = express();
 
 // INDEX.HTML
 
@@ -24,5 +24,5 @@ app.get('/:wildcard', (req, res) => {
 });
 
 app.listen(PORT, () => {
-    console.log(`API server now on port 3001!`);
+    console.log(`API server now on port ${PORT}!`);
 });
