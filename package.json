@@ -1,23 +1,23 @@
 {
-  "name": "note-taker",
+  "name": "09__express-challenge",
   "version": "1.0.0",
-  "description": "In this assignment I was tasked with creating an application called Note Taker that can be used to write and save notes. This application will use and Express.js back end and will save and retrieve note data from a JSON file. This application has been deployed to Heroku.",
-  "main": "index.js",
+  "description": "",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/stewk033/note-taker.git"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "dev": "nodemon app.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/stewk033/note-taker/issues"
-  },
-  "homepage": "https://github.com/stewk033/note-taker#readme",
   "dependencies": {
     "express": "^4.17.2"
+  },
+  "engines": {
+    "node": "14.x"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
   }
 }
