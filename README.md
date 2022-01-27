@@ -26,9 +26,11 @@ In this assignment I was tasked with creating an application called Note Taker t
 
 ## Solution
 
-Live URL: 
+Live URL: https://peaceful-everglades-63833.herokuapp.com/
 
 ![SCREENSHOT]()
 ![SCREENSHOT]()
 
 ## Credits
+
+Provided with starter code: https://github.com/coding-boot-camp/miniature-eureka
