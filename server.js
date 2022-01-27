@@ -2,26 +2,30 @@ const path = require('path');
 const fs = require('fs');
 const express = require('express');
 const { endianness } = require('os');
-
-const PORT = process.env.PORT || 3001;
 const app = express();
+
+const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
 
-// INDEX.HTML
+// HTML
 
 app.get('/', (req, res) => {
     res.sendFile('index.html');
 });
 
-// API SECTION
+app.get('/notes', (req, res) => {
+    res.sendFile(path.join(__dirname, './public/notes.html'));
+});
+
+// API Section - GET Route for notes
 
 app.get('/api/notes', (req, res) => {
     res.json(JSON.parse(fs.readFileSync('./db/db.json') || []));
 });
 
-// POST/CREATE route for notes
+// POST route for notes
 
 app.post('/api/notes', (req, res) => {
     let notes = JSON.parse(fs.readFileSync('./db/db.json') || []);
