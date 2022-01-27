@@ -11,6 +11,10 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stewk033/note-taker/issues"
+  },
+  "homepage": "https://github.com/stewk033/note-taker#readme",
   "dependencies": {
     "express": "^4.17.2"
   },
