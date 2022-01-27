@@ -28,7 +28,7 @@ In this assignment I was tasked with creating an application called Note Taker t
 
 Live URL: https://peaceful-everglades-63833.herokuapp.com/
 
-![SCREENCAST](./assets/images/note-taker.gif)
+![SCREENCAST](./public/assets/images/note-taker.gif)
 
 ## Credits
 
