@@ -6,6 +6,18 @@ const app = express();
 
 const PORT = process.env.PORT || 3001;
 
+// INDEX.HTML
+
+app.get('/', (req, res) => {
+    res.sendFile('index.html');
+});
+
+// API SECTION
+
+app.get('/api/notes', (req, res) => {
+    res.json(JSON.parse(fs.readFileSync('./db/db.json') || []));
+});
+
 
 app.get('/:wildcard', (req, res) => {
     res.sendFile(path.join(__dirname, './public/index.html'));
